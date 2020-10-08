@@ -7,7 +7,7 @@ import {ChatHistorySchema} from "./chat-history.schema";
 
 @Module({
   imports: [
-    MongooseModule.forFeature([{ name: 'ChatHistory', schema: ChatHistorySchema, collection: 'call_history' }]),
+    MongooseModule.forFeature([{ name: 'ChatHistory', schema: ChatHistorySchema, collection: 'happybot_call_detail' }]),
     forwardRef(() => AuthModule),
   ],
   providers: [ChatHistoryService],
